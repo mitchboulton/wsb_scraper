@@ -17,7 +17,7 @@ Tool aims to have the following functionality.
   - Produce a dataset over which regression analysis can be applied, comparing daily stock price movement to overall sentiment
   - Running of testing over the historical period
   
-3. Automation stage (
+3. Automation stage (giving the progam power to make investment decisions)
 
   - Development of a decision making process, so that the program, once scraping and testing is complete, can make a go/no-go decision
   - Connecting to interactive brokers (paper money first)

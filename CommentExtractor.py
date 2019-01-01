@@ -35,18 +35,28 @@ print(submission.num_comments)
 #    print(BMP(top_level_comment.body))
 
 # Creates a dictionary for tickers - will need to be developed further
-tickers = {'SPX':0,'VIX':0}
+tickers = ['SPX','VIX']
+tickerCount = [0,0]
+number_of_tickers = len(tickers)
 
 # Until the dictionary is completed and integrated, using hardcoded SPX to test.
-spx = 0
+SPX = 0
+word = 'SPX'
 
 # Prints all comments in thread
 submission.comments.replace_more(limit=None)
 for comment in submission.comments.list():
+    i = 0 # Resets i to zero at the start of every comment read
     print(BMP(comment.body)) # For testing, to be deleted
     # Searches for SPX in the comment body, needs to be hooked into a dictionary. Next step to be completed.
-    if 'SPX' in comment.body:
-        spx = spx + 1
-    print(spx)
+    print('Number of tickers: ',number_of_tickers)
+    while i < number_of_tickers:
+        if tickers[i] in comment.body:
+            tickerCount[i] = tickerCount[i] + 1
+            print('----------------------------------------------')
+        i = i + 1
+        print('Current value of i: ',i)
+    print('Current value of i: ',i)
+    print(tickerCount)
 
-# Github change test
+

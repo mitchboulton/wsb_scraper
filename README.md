@@ -1,7 +1,5 @@
 # wsb_scraper
-Scraping tool for WSB
-
-Tool aims to have the following functionality.
+Very, very rudamentary effort at creating a scraping tool for WSB. Moved onto other projects after getting part way through the initial stage.
 
 1. Initial stage (scraping)
 
@@ -9,6 +7,9 @@ Tool aims to have the following functionality.
   - Search for and count the number of mentions for stock tickers
   - Search for and count the option place for each stock ticket (if one is mentioned alongside the stock)
   - Search for and count mentions of "buy" and "sell" for stock tickers and option types (if one is mentioned alongside the stock)
+  
+  -------------------------PROJECT PROGRESS ENDED HERE----------------------------------
+  
   - Conduct analysis to determine an overall "sentiment" for that day
   
 2. Testing stage (testing of sentiment)
